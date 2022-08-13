@@ -1,0 +1,73 @@
+1.	Write a function for arithmetic operators (+, -,*,/)
+
+def add (n1, n2):
+    return n1+n2
+ 
+def minus (n1, n2): 
+    return n1-n2
+ 
+def multiply (n1, n2):  
+    return n1*n2
+ 
+def divide (n1, n2):
+    return n1/n2
+num1= int (input ("Enter First number:"))
+num2 = int (input ("Enter Second number:"))
+
+print (num1,"+”, num2,"=", add (num1, num2))
+
+print (num1,"-”, num2,"=", minus (num1, num2))
+
+print (num1,"*”, num2,"=",multiply(num1, num2))
+
+print (num1,"/", num2,"= “, divide (num1, num2))
+
+2. Write a method for increment and decrement operators (++, --)
+
+a=0
+a+=1
+a=a+1
+print ('The value of a is ‘, a)
+
+print ("INCREMENTED FOR LOOP")
+for i in range (0,5):
+   print(i)
+
+print ("DECREMENTED FOR LOOP")
+for i in range (4, -1, -1):
+   print(i)
+
+3. Write a program to find the two numbers equal or not.
+
+a=int (input ("Enter first number:"))
+b=int (input ("Enter second number:"))
+if a==b:
+    print ("Both numbers are equal")
+else:
+    print ("Both numbers are not equal")
+
+4. Program for relational operators (<, <==, >, >==)
+
+a=10
+b=15
+print(a<b) 
+print(a<=b) 
+print(a>b)  
+print(a>=b)  
+print(a==b) 
+print (a! =b)
+
+5. Print the smaller and larger number.
+
+a=int (input('Enter first number: '))
+b=int (input ('Enter second number: '))
+
+if a>b: 
+     print ("a is greater")
+else:
+    print ("b is greater")
+
+if a<b:
+     print ("a is smaller")
+else:
+    print ("b is smaller") 
