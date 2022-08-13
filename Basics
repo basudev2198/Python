@@ -1,0 +1,44 @@
+1. Write a program to print your name.
+
+print ("Anup Singh")
+
+2. Write a program for a Single line comment and multi-line comments.
+
+#This is a multiline comment in python
+#And expands to more than one line
+print("Pythonforbeginners.com")
+
+3. Define variables for different Data Types int, Boolean, char, float, double and print on the Console.
+
+a = -5
+print ("Type of a: ", type(a))
+b = False
+print ("Type of b: ", type(b))
+c = 5.0
+print ("Type of c: ", type(c))
+String = 'Hello'
+print ("Type of String: ", type (String))
+
+4. Define the local and Global variables with the same name and print both variables and understand the scope of the variables.
+
+a=8
+
+def f ():
+    print ('Inside f (): ', a)
+
+def g ():
+    a=5
+    print ('Inside g (): ', a) 
+
+def h ():
+    global a
+    a=6     
+    print ('Inside h (): ', a)  
+
+print ('global: ', a)
+f ()
+print ('global: ', a)
+g ()
+print ('global: ', a)
+h ()
+print ('global: ', a)
