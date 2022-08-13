@@ -1,0 +1,66 @@
+1.	Write a program to read text file.
+
+file1 = open("HW.txt","r")
+data = file1.read()
+print(data)
+print()
+
+file2 = open("Blank.txt","w")
+str1 = 'Python'
+file2.write(str1)
+print()
+
+file3 = open("HW.txt","r+")
+print(file3.readline(11))
+print()
+
+2.	Write a program to write text to .txt file using InputStream.
+
+f=open('C:\myfile.txt')
+while True:
+    try:
+        line=next(f)
+        print(line)
+    except StopIteration:
+        break
+f.close()
+
+3.	Write a program to read a file stream.
+
+import sys, io
+zen = io.StringIO()
+old_stdout = sys.stdout
+sys.stdout = zen
+import this
+sys.stdout = old_stdout
+f=open('zen.txt','w')
+f.write(zen.getvalue())
+f.close()
+
+4.	Write a program to read a file a just to a particular index using seek().
+
+fi = open("text.txt", "r")  
+fi.seek(30)  
+print(fi.tell())  
+   
+print(fi.readline())  
+fi.close()  
+
+5.	Write a program to check whether a file is having read access and write access permissions.
+
+import os.path
+
+def check_file_writable(fnm):
+    if os.path.exists(fnm):
+        
+        if os.path.isfile(fnm): 
+            return os.access(fnm, os.W_OK)
+        else:
+            return False
+    pdir = os.path.dirname(fnm)
+    if not pdir: pdir = '.'
+    return os.access(pdir, os.W_OK)
+
+if __name__ == '__main__':
+    from sys import argv
+    print argv[1], '=>', check_file_writable(argv[1])
