@@ -1,0 +1,21 @@
+1.	Define a static variable and access that through a class.
+
+class Python:
+    staticVariable = 9 
+print (Python.staticVariable)
+
+2.	Define a static variable and access that through an instance.
+
+Python.staticVariable=12
+print (Python.staticVariable)
+
+3.	Define a static variable and change within the instance.
+
+instance = Python ()
+print(instance.staticVariable)
+
+4. Define a static variable and change within the class.
+
+instance.staticVariable=15
+print(instance.staticVariable) 
+print (Python.staticVariable)
